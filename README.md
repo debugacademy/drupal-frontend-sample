@@ -27,6 +27,8 @@ A _subset_ of a theme's .info.yml file.
 
 Included to demonstrate adding the Single Directory Components (sdc) module as a dependency to your theme. This is because the code sample relies on the `sdc` module.
 
+[Click here](/yourtheme/yourtheme.info.yml) to access the file.
+
 ### yourtheme.libraries.yml (and uswds/)
 The USWDS CSS & JS files are located at:
 - uswds/uswds.min.css
@@ -37,6 +39,9 @@ They were downloaded from the USWDS website and saved into yourtheme/uswds/
 The yourtheme.libraries.yml file 'registers' the USWDS CSS & JS files as `yourtheme/uswds`.
 
 This makes it possible for Drupal to automatically load them whenever your component is displayed.
+
+- [Click here](/yourtheme/yourtheme.libraries.yml) to access the libraries.yml file.
+- [Click here](/yourtheme/uswds/) to access the USWDS folder.
 
 ### components/accordion/
 This folder contains two files:
@@ -51,7 +56,11 @@ The `accordion.twig` file contains the TWIG (dynamic markup) for our component. 
 
 P.S. Single directory components would also automatically load accordion.css and accordion.js, if we had created those files within our components/accordion/ folder.
 
+[Click here](/yourtheme/components/accordion/) to access the components/accordion folder.
+
 ### templates/node--faq.html.twig
 In this file, we replace the default output for the site's FAQ content type with our accordion "single directory component".
 
 We render all of the required variables (more information in the file's comments) to ensure we don't break any functionality provided by Drupal.
+
+[Click here](/yourtheme/templates/node--faq.html.twig) to access the node--faq file.
