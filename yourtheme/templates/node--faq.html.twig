@@ -1,0 +1,26 @@
+{#
+ # Overrides the FAQ content type's display
+ # using the Accordion component.
+ #
+ # Passes the "label" variable into the component's
+ # "title" variable
+ #
+ # Renders the body field (content.body)
+ # in place of the component's "body" twig block
+ #
+ # Renders attributes, title_prefix, title_suffix,
+ # and the rest of the content variable to ensure
+ # cache "bubbles", contextual links load properly,
+ # and more.
+ #}
+<div{{ attributes }}>
+  {{ title_prefix }}{{ title_suffix }}
+  {% embed 'yourtheme:accordion' with {
+    title: label
+  } %}
+    {% block body %}
+      {{ content.body }}
+    {% endblock %}
+  {% endembed %}
+  {{ content|without('body') }}
+</div>

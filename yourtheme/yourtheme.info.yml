@@ -1,0 +1,4 @@
+# Because your theme uses "single directory components"
+# Your theme requires Drupal core's "sdc" module
+dependencies:
+  - drupal:sdc

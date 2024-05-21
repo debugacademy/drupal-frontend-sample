@@ -1,0 +1,6 @@
+uswds:
+  css:
+    component:
+      uswds/uswds.min.css: {}
+  js:
+    uswds/uswds.min.js: {}

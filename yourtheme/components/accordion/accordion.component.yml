@@ -1,0 +1,18 @@
+name: Accordion
+group: USWDS
+props:
+  type: object
+  required:
+    - title
+  properties:
+    title:      # Tells Drupal the accordion accepts a "title" variable ('property')
+      title: Title
+      type: string
+slots:
+  body:         # Tells Drupal the accordion accepts a "body" Twig block ('slot')
+    title: Body
+    required: true
+    description: The main accordion text.
+libraryOverrides:
+  dependencies:
+    - yourtheme/uswds # Loads USWDS library from yourtheme.libraries.yml
